@@ -2,7 +2,7 @@
     <div>
        <div class="container">
            <div class="row" v-for="(album, index) in albums" :key="index">
-               <album/>
+               <album :info="album"/>
            </div>
        </div>
     </div>
@@ -30,7 +30,7 @@ export default {
             // handle success
             this.albums = response.data.response
             // console.log(response.data.response[0].year);
-            console.log(this.albums);
+            // console.log(this.albums);
         })
         .catch(function (error) {
             // handle error

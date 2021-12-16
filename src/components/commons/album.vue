@@ -1,15 +1,18 @@
 <template>
     <div class="album">
-        <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
-        <h2>New Jersey</h2>
-        <p>Bon Jiovi</p>
-        <p>1968</p>
+        <img :src="info.poster" alt="">
+        <h2>{{info.author}}</h2>
+        <p>{{info.title}}</p>
+        <p>{{info.year}}</p>
     </div>    
 </template>
 
 <script>
 export default {
-    name: 'album'
+    name: 'album',
+    props: {
+        info: Object
+    }
 }
 </script>
 
