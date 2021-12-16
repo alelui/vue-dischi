@@ -1,17 +1,19 @@
 <template>
     <main>
-        <h3>Main</h3>
+        <Albums/>
     </main>
 </template>
 
 <script>
+import Albums from '../sections/albums.vue'
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+        Albums
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-    h3{
-        color: red;
-    }
+
 </style>
