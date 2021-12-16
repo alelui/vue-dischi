@@ -1,17 +1,30 @@
 <template>
     <div>
-        <h3>Lista Albums</h3>
+       <div class="container">
+           <div class="row">
+               <album/>
+           </div>
+       </div>
     </div>
 </template>
 
 <script>
+import album from '../commons/album.vue'
 export default {
-    name: 'albums'
+    name: 'albums',
+    components: {
+        album
+    }
+
 }
 </script>
 
 <style>
-    h3{
-        color: red;
+    .container{
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
     }
 </style>

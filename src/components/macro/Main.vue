@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Albums from '../sections/albums.vue'
+import Albums from '../sections/Albums.vue'
 export default {
     name: 'Main',
     components: {
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    main{
+        background-color: #1e2d3b;
+    }
 </style>
