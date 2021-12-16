@@ -18,8 +18,26 @@ export default {
     name: 'albums',
     components: {
         album
-    }
+    },
 
+    data(){
+        return{
+            albums: null
+        }
+    },
+
+    created(){
+        // Make a request for a user with a given ID
+        axios.get('https://flynn.boolean.careers/exercises/api/array/music')
+        .then(function (response) {
+            // handle success
+            console.log(response);
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+    }
 }
 </script>
 
