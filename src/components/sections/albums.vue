@@ -51,8 +51,8 @@ export default {
         .row{
             display: flex;
             flex-wrap: wrap;
-            width: calc(100% / 5 - 40px);
-            margin: 14px 20px;
+            width: calc(100% / 5 - 24px);
+            margin: 14px 12px;
         }
     }
 </style>

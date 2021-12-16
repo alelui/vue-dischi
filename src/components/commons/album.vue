@@ -1,8 +1,8 @@
 <template>
     <div class="album">
         <img :src="info.poster" alt="">
-        <h2>{{info.author}}</h2>
-        <p>{{info.title}}</p>
+        <h3>{{info.title}}</h3>
+        <p>{{info.author}}</p>
         <p>{{info.year}}</p>
     </div>    
 </template>
@@ -26,9 +26,10 @@ export default {
         img{
             width: 100%;
         }
-        h2{
+        h3{
             color: white;
-            margin: 15px 0;  
+            margin: 15px 0;
+            text-transform: uppercase;
         }
         p{
             color: #596b76;
