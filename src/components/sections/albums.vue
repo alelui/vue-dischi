@@ -1,10 +1,7 @@
 <template>
     <div>
        <div class="container">
-           <div class="row">
-               <album/>
-           </div>
-            <div class="row">
+           <div class="row" v-for="(album, index) in albums" :key="index">
                <album/>
            </div>
        </div>
@@ -29,9 +26,11 @@ export default {
     created(){
         // Make a request for a user with a given ID
         axios.get('https://flynn.boolean.careers/exercises/api/array/music')
-        .then(function (response) {
+        .then((response) => {
             // handle success
-            console.log(response);
+            this.albums = response.data.response
+            // console.log(response.data.response[0].year);
+            console.log(this.albums);
         })
         .catch(function (error) {
             // handle error
