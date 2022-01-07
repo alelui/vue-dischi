@@ -30,7 +30,7 @@ export default {
             // handle success
             this.albums = response.data.response
             // console.log(response.data.response[0].year);
-            // console.log(this.albums);
+            console.log(this.albums);
         })
         .catch(function (error) {
             // handle error

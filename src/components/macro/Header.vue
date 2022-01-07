@@ -1,6 +1,8 @@
 <template>
     <header>
         <h2>Header</h2>
+        <i class="fas fa-dog"></i>
+        <i class="fas fa-cat"></i>
     </header>
 </template>
 
